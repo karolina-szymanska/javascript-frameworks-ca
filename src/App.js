@@ -4,6 +4,7 @@ import { Routes, Route, Outlet } from "react-router-dom";
 import Nav from "./components/navbar";
 import HomePage from "./components/pages/index";
 import ProductPage from "./components/pages/product";
+import ContactPage from "./components/pages/contact";
 
 function Header() {
   return (
@@ -31,6 +32,10 @@ function Home() {
   return <HomePage />;
 }
 
+function Contact() {
+  return <ContactPage />;
+}
+
 function Product() {
   return <ProductPage />;
 }
@@ -45,7 +50,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          {/* <Route path="contact" element={<Contact />} /> */}
+          <Route path="contact" element={<Contact />} />
           {/* <Route path="cart" element={<Cart />} /> */}
           <Route path="product/:id" element={<Product />} />
           <Route path="*" element={<RouteNotFound />} />
