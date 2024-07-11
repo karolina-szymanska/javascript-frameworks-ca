@@ -15,11 +15,13 @@ const useCartStore = create(
         set(() => ({ loading: true }));
         try {
           const response = await fetch(
-            "https://api.noroff.dev/api/v1/online-shop/"
+            "https://v2.api.noroff.dev/online-shop/"
           );
           const json = await response.json();
+          const results = json.data;
+          console.log(results);
           set((state) => ({
-            products: (state.products = json),
+            products: (state.products = results),
             isLoading: false,
           }));
         } catch (error) {

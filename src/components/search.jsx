@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import useApi from "./useApi";
 
 function Search() {
-  const { data, isError } = useApi("https://api.noroff.dev/api/v1/online-shop");
+  const { data, isError } = useApi("https://v2.api.noroff.dev/online-shop");
 
   const [searchInput, setSearchInput] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
@@ -15,7 +15,7 @@ function Search() {
   function onSearchInputChange(searchValue) {
     setSearchInput(searchValue);
 
-    const results = data.filter((product) => {
+    const results = data.data.filter((product) => {
       return product.title.toLowerCase().includes(searchValue.toLowerCase());
     });
     setFilteredProducts(results);
@@ -34,7 +34,7 @@ function Search() {
             <li key={item.id}>
               <Link to={"/product/" + item.id}>
                 <div className="mini-img">
-                  <img src={item.imageUrl} alt="Product" />
+                  <img src={item.image.url} alt="Product" />
                 </div>
                 <div>{item.title}</div>
               </Link>
