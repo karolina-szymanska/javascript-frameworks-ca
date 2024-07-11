@@ -1,23 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+// import "./App.css";
+import React from "react";
+import { Routes, Route, Outlet } from "react-router-dom";
+import Nav from "./components/navbar";
+import HomePage from "./components/pages/index";
+
+function Header() {
+  return (
+    <header>
+      <Nav />
+    </header>
+  );
+}
+
+function Footer() {
+  return <footer>© Karolina Szymanska 2024</footer>;
+}
+
+function Layout() {
+  return (
+    <div>
+      <Header />
+      <Outlet />
+      <Footer />
+    </div>
+  );
+}
+
+function Home() {
+  return <HomePage />;
+}
+
+function RouteNotFound() {
+  return <div>Page not found</div>;
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          {/* <Route path="contact" element={<Contact />} /> */}
+          {/* <Route path="cart" element={<Cart />} /> */}
+          {/* <Route path="product/:id" element={<Product />} /> */}
+          <Route path="*" element={<RouteNotFound />} />
+          {/* <Route path="success" element={<Success />} /> */}
+        </Route>
+      </Routes>
     </div>
   );
 }
