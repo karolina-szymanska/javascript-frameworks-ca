@@ -13,7 +13,6 @@ function useApi(url) {
         const fetchedData = await fetch(url);
         const json = await fetchedData.json();
         const results = json.data;
-        // console.log(results);
         setData(results);
       } catch (error) {
         console.log(error);
