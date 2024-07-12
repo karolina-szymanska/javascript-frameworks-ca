@@ -156,8 +156,8 @@ main {
       background: $white;
       display: flex;
 
-      & img {
-        height: 80%;
+      & svg {
+        height: 100%;
         margin-left: 0.2rem;
         align-self: center;
       }
