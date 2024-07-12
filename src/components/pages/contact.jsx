@@ -8,12 +8,12 @@ const schema = yup
   .object({
     fullName: yup
       .string()
-      .min(3, "Must contain more than 3 characters")
+      .min(3, "Must contain minimum 3 characters")
       .required("Please fill in this field")
       .typeError("Please write your full name here"),
     subject: yup
       .string()
-      .min(3, "Must contain more than 3 characters")
+      .min(3, "Must contain minimum 3 characters")
       .required("Please fill in this field")
       .typeError("Please write your subject here"),
     email: yup
@@ -23,7 +23,7 @@ const schema = yup
       .typeError("Please enter a valid email address"),
     body: yup
       .string()
-      .min(3, "Must contain more than 3 characters")
+      .min(3, "Must contain minimum 3 characters")
       .required("Please fill in this field")
       .typeError("Please write your message here"),
   })
