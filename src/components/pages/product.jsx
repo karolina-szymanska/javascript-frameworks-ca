@@ -1,16 +1,16 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import useApi from "../useApi";
-// import { useCart } from "../useCart";
-// import { Button } from "../styles/product.styles";
+import { useCart } from "../useCart";
+import { Button } from "../styles/product.styles";
 
 function ProductPage() {
-  //   const { addToCart } = useCart();
+  const { addToCart } = useCart();
   let params = useParams();
 
-  //   function onAddToCartClick(e) {
-  //     addToCart(e);
-  //   }
+  function onAddToCartClick(e) {
+    addToCart(e);
+  }
 
   const { data, isLoading, isError } = useApi(
     "https://v2.api.noroff.dev/online-shop/" + params.id
@@ -62,9 +62,9 @@ function ProductPage() {
                 </span>
               )}
             </div>
-            {/* <Button className="buttons" onClick={() => onAddToCartClick(data)}>
+            <Button className="buttons" onClick={() => onAddToCartClick(data)}>
               Add to Cart
-            </Button> */}
+            </Button>
           </div>
         </div>
         <h2 className="review-heading">Reviews</h2>
