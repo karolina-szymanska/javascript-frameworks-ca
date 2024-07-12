@@ -6,6 +6,7 @@ import HomePage from "./components/pages/index";
 import ProductPage from "./components/pages/product";
 import CartPage from "./components/pages/cart";
 import ContactPage from "./components/pages/contact";
+import SuccessPage from "./components/pages/success";
 
 function Header() {
   return (
@@ -45,6 +46,10 @@ function Product() {
   return <ProductPage />;
 }
 
+function Success() {
+  return <SuccessPage />;
+}
+
 function RouteNotFound() {
   return <div>Page not found</div>;
 }
@@ -59,7 +64,7 @@ function App() {
           <Route path="cart" element={<Cart />} />
           <Route path="product/:id" element={<Product />} />
           <Route path="*" element={<RouteNotFound />} />
-          {/* <Route path="success" element={<Success />} /> */}
+          <Route path="success" element={<Success />} />
         </Route>
       </Routes>
     </div>
