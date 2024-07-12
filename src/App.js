@@ -1,4 +1,5 @@
-// import "./App.css";
+import "./App.css";
+import "./styles.scss";
 import React from "react";
 import { Routes, Route, Outlet } from "react-router-dom";
 import Nav from "./components/navbar";
