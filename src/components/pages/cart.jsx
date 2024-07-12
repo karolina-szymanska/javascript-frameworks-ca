@@ -18,18 +18,18 @@ function CartPage() {
                 {cart.map((cart, index) => (
                   <li key={cart.id + "_" + index}>
                     <div className="cart-images">
-                      <img src={cart.imageUrl} alt="product" />
+                      <img src={cart.image?.url} alt="product" />
                     </div>
                     <h2>{cart.title}</h2>
                     <div className="cart-item-price">
                       {cart.discountedPrice},-
                     </div>
-                    <div
+                    {/* <div
                       className="x"
                       onClick={() => onRemoveFromCartClick(index)}
                     >
                       ☒
-                    </div>
+                    </div> */}
                   </li>
                 ))}
               </ul>
