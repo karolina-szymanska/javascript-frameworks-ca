@@ -15,7 +15,7 @@ function Search() {
   function onSearchInputChange(searchValue) {
     setSearchInput(searchValue);
 
-    const results = data.data.filter((product) => {
+    const results = data.filter((product) => {
       return product.title.toLowerCase().includes(searchValue.toLowerCase());
     });
     setFilteredProducts(results);
