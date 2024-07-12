@@ -1,5 +1,7 @@
 # [React Project](https://javascript-frameworks-react-ca.netlify.app/)
 
+<img width="1720" alt="project screenshot" src="https://github.com/user-attachments/assets/2c4f58c1-12e1-4d5a-bdf6-1c39bbb616bb">
+
 An e-commerce store built in ReactJS.
 
 ## Description
