@@ -45,7 +45,7 @@ function ProductPage() {
       <div className="container">
         <div className="product-info">
           <div className="product-image">
-            <img src={data.image.url} alt={data.title} />
+            <img src={data.image?.url} alt={data.title} />
           </div>
           <div>
             <h1>{data.title}</h1>
