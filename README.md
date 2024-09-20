@@ -39,42 +39,50 @@ Body (Minimum number of characters is 3, required)
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/reactrouter/reactrouter-original.svg" title="React Router" alt="React Router" width="40" height="40"/>&nbsp;
-  <img src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fq5ptpwuoezkqwl4r9cwr.png" title="Zustand" alt="Zustand" width="40" height="40"/>&nbsp;
 </div>
 
-- [Noroff API](https://v2.api.noroff.dev/online-shop)
+## API
+
+API Documentation: https://docs.noroff.dev/docs/v2/basic/online-shop
+API Swagger: https://v2.api.noroff.dev/docs/static/index.html
 
 ## Getting Started
 
 ### Installing
 
-Clone the repo:
+1. Clone the repo:
 
-```bash
-git clone git@github.com:karolina-szymanska/javascript-frameworks-ca.git
+```
+https://github.com/karolina-szymanska/javascript-frameworks-ca
+```
+
+2. Install the dependencies:
+
+```
+npm install
 ```
 
 ### Running
 
 1. Install dependencies
 
-```bash
+```
 npm i
 ```
 
-2. Start React Application
+2. Start Application
 
-```bash
-npm start
 ```
-
-## Contributing
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request.
+npm run start
+```
 
 ## Contact
 
-[My LinkedIn page](https://www.linkedin.com/in/karolina-szyma%C5%84ska-64b36089/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/karolina-szyma%C5%84ska-64b36089/)
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/karolina-szymanska)
+
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:karolinaszymanska899@gmail.com)
 
 ## Acknowledgments
 
