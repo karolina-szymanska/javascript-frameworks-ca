@@ -44,6 +44,7 @@ Body (Minimum number of characters is 3, required)
 ## API
 
 API Documentation: https://docs.noroff.dev/docs/v2/basic/online-shop
+
 API Swagger: https://v2.api.noroff.dev/docs/static/index.html
 
 ## Getting Started
