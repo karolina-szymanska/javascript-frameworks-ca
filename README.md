@@ -34,11 +34,13 @@ Body (Minimum number of characters is 3, required)
 
 - [React](https://react.dev/)
 - [React-Router-DOM](https://reactrouter.com/en/main)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Zustand](https://docs.pmnd.rs/zustand/)
 
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/reactrouter/reactrouter-original.svg" title="React Router" alt="React Router" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
 </div>
 
 ## API
